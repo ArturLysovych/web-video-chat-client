@@ -15,8 +15,20 @@ button {
   color: #0ea5e9;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0369a1;
+}
+
 .app-container {
-  @apply max-w-screen-lg w-full h-full px-[10px];
+  @apply max-w-[380px] w-full h-full px-[10px];
 }
 
 .flex-center {
@@ -24,5 +36,5 @@ button {
 }
 
 .home-button {
-  @apply w-full bg-lightSky py-2 text-normalSky font-medium;
+  @apply w-full bg-lightSky py-2 text-normalSky font-medium rounded-md;
 }

@@ -32,7 +32,7 @@ function JoinRoom() {
                 }}>
                     <h2 className="text-4xl text-lightSky font-bold uppercase text-center">Enter the code to join</h2>
                     <input
-                        className="w-full bg-lightSky py-2 text-normalSky font-medium p-2 outline-none"
+                        className="w-full bg-lightSky py-2 text-normalSky font-medium p-2 outline-none rounded-md"
                         placeholder="your meeting code here"
                         type="text"
                         onChange={(e) => setCodeVal(e.target.value)}

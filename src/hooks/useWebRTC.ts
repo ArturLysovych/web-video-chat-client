@@ -122,8 +122,8 @@
                 localMediaStream.current = await navigator.mediaDevices.getUserMedia({
                     audio: true,
                     video: {
-                        width: 400,
-                        height: 240
+                        width: 300,
+                        height: 200
                     }
                 });
 
