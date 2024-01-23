@@ -3,7 +3,6 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import './index.css';
 
 import Main from './pages/Main';
 import Room from './pages/Room';
