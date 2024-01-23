@@ -5,12 +5,16 @@ import {
 } from 'react-router-dom';
 import './index.css';
 
+import Main from './pages/Main';
+import Room from './pages/Room';
+import NotFound from './pages/NotFound';
+
 const Root = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/room/:id" element={<div>Room</div>} />
-      <Route path="/" element={<div>Home</div>} />
-      <Route path='*' element={<div>Not found</div>} />
+    <Route path="/" element={<Main />} />
+      <Route path="/rooms/:id" element={<Room />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
   </BrowserRouter>
 );
