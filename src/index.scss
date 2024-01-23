@@ -2,7 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-normalSky;
+}
+
 button {
-  border: 1px solid #333;
-  padding: 2px;
+  outline: none;
+}
+
+::selection {
+  background: #fff;
+  color: #0ea5e9;
+}
+
+.app-container {
+  @apply max-w-screen-lg w-full h-full px-[10px];
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.home-button {
+  @apply w-full bg-lightSky py-2 text-normalSky font-medium;
 }

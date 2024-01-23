@@ -10,28 +10,23 @@ function Main() {
 
     useEffect(() => {
         socket.on(ACTIONS.SHARE_ROOMS, ({ rooms = [] }) => {
-            setRooms(rooms); 
+            setRooms(rooms);
         });
-    }, [])
+    }, []);
 
     return (
-      <>
-            <h1 className='text-3xl text-red-500'>Availble rooms</h1>
-            <ul>
-                {rooms.map(roomId => (
-                    <li key={roomId}>
-                        {roomId}
-                        <button onClick={() => {
-                            navigate(`/rooms/${roomId}`)
-                        }}>JOIN ROOM</button>
-                    </li>
-                ))}
-            </ul>
-            
-            <button onClick={() => {
-                navigate(`/rooms/${v4()}`)
-            }}>CREATE NEW ROOM</button>
-      </>
+        <div className="h-screen w-full flex-center">
+            <div className='app-container flex-center flex-col gap-4'>
+                <h2 className='text-5xl text-lightSky font-bold'>Meeting App</h2>
+
+                <button className='home-button' onClick={() => {
+                    navigate(`/rooms/${v4()}`)
+                }}>CREATE OWN ROOM</button>
+                <button className='home-button' onClick={() => {
+                    navigate(`/join`)
+                }}>JOIN ANOTHER ROOM</button>
+            </div>
+        </div>
     )
 }
   

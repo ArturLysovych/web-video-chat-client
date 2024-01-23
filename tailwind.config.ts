@@ -8,6 +8,7 @@ const tailwindConfig: Config = {
   theme: {
     extend: {
       colors: {
+        lightSky: '#f0f9ff',
         normalSky: '#38bdf8',
         semiboldSky: '#0ea5e9',
         boldSky: '#0369a1'
